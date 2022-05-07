@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Xeno is a landing page for your product/startup with a bold/confident design."
+    />
+    <title>Xeno | Startup/Product Landing Page</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="true"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Rubik:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./src/styles/globals.css" />
+  </head>
+  <body
+    class="w-screen bg-white font-body text-gray-800 scrollbar overflow-x-hidden scrollbar-thin scrollbar-track-brand-100 scrollbar-thumb-brand-700"
+    id="body"
+  >
+    <!-- DECORATION: Stripe/line at top -->
+    <div class="h-2 bg-gradient-to-r from-brand-600 to-red-500"></div>
+
+    <!-- NAVIGATION -->
+    <div class="bg-gray-50">
+      <div
+        class="flex justify-between px-9 py-7 align-baseline text-gray-700 md:mx-auto md:max-w-7xl"
+      >
+        <div>
+          <a href="/" class="font-display text-2xl font-extrabold">Xeno</a>
+        </div>
+
+        <!-- Mobile navigation -->
+        <nav
+          class="mobile-nav absolute top-0 left-full z-40 h-screen w-screen bg-brand-600 transition-all duration-700"
+        >
+          <ul
+            class="flex h-full w-full flex-col items-start justify-center gap-8 px-10 font-display text-2xl font-bold text-brand-50"
+          >
+            <li>
+              <a href="#features" class="nav-link hover:text-brand-300"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#how-it-works" class="nav-link hover:text-brand-300"
+                >How it works</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" class="nav-link hover:text-brand-300"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a href="#pricing" class="nav-link hover:text-brand-300"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a href="#contact-us" class="nav-link hover:text-brand-300"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Tablet & Desktop navigation -->
+        <nav class="hidden md:block">
+          <ul
+            class="flex items-center justify-between space-x-7 font-bold text-gray-600"
+          >
+            <li>
+              <a href="#features" class="nav-link">Features</a>
+            </li>
+            <li>
+              <a href="#how-it-works" class="nav-link">How it works</a>
+            </li>
+            <li>
+              <a href="#testimonials" class="nav-link">Testimonials</a>
+            </li>
+            <li>
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li>
+              <a
+                href="https://creatorx64.gumroad.com/l/xeno-template"
+                target="_blank"
+                class="btn-primary"
+                >Get started</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="z-50 cursor-pointer md:hidden">
+          <svg class="hamburger h-7 w-7 stroke-current transition">
+            <!-- <svg class="hamburger h-7 w-7 stroke-brand-50"> -->
+            <use xlink:href="/icons.svg#icon-hamburger"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <main class="text-base leading-relaxed lg:text-lg">
+      <div>
+        <!-- SECTION: Hero -->
+        <div
+          class="bg-gray-50 p-9 pb-12 md:flex md:items-center md:justify-center md:gap-8 lg:gap-12 lg:pt-12 lg:pb-14"
+        >
+          <picture
+            class="mx-auto block w-4/5 max-w-sm translate-x-7 md:order-1 md:m-0"
+          >
+            <source type="image/webp" srcset="/hero.webp" />
+            <source type="image/png" srcset="/hero.png" />
+            <img
+              src="/hero.png"
+              alt="Mobile phone in front of a triangle-shape background"
+            />
+          </picture>
+
+          <div class="text-center md:text-left">
+            <h1
+              class="mt-3 mb-6 font-display text-2xl font-extrabold md:mt-0 md:mb-8 md:text-4xl"
+            >
+              One product.
+              <br />
+              Endless possibilities.
+            </h1>
+
+            <p class="mx-auto mb-6 max-w-md lg:mx-0">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusamus obcaecati provid ab impedit facilis.
+            </p>
+
+            <div
+              class="mb-10 flex justify-center space-x-3 md:justify-start lg:mb-14 lg:space-x-4"
+            >
+              <a
+                class="btn-primary"
+                href="https://creatorx64.gumroad.com/l/xeno-template"
+                target="_blank"
+                >Get started</a
+              >
+              <a class="btn-secondary" href="#features">Find out more</a>
+            </div>
+
+            <div
+              class="hidden gap-3 md:flex md:flex-col md:items-start lg:flex-row lg:items-center"
+            >
+              <div class="-space-x-5">
+                <img
+                  src="/a1.jpg"
+                  alt="User avatar"
+                  class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
+                />
+                <img
+                  src="/a2.jpg"
+                  alt="User avatar"
+                  class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
+                />
+                <img
+                  src="/a4.jpg"
+                  alt="User avatar"
+                  class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
+                />
+                <img
+                  src="/a5.jpg"
+                  alt="User avatar"
+                  class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
+                />
+                <img
+                  src="/a6.jpg"
+                  alt="User avatar"
+                  class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
+                />
+              </div>
+              <p class="text-sm text-gray-500 lg:text-base">
+                <strong class="text-brand-600">+12k</strong> people use Xeno,
+                <strong class="text-brand-600">everyday.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: Featured in -->
+        <div class="bg-white px-9 pb-6">
+          <h2
+            class="py-6 text-center font-display text-sm font-bold uppercase tracking-widest text-gray-400"
+          >
+            As Featured In
+          </h2>
+
+          <!-- Desktop: No auto slider required. -->
+          <ul
+            class="hidden justify-center gap-12 px-9 align-middle opacity-75 md:flex lg:gap-20"
+          >
+            <li class="shrink-0">
+              <img
+                class="h-5 lg:h-6"
+                src="/logo-usat.png"
+                alt="USA Today logo"
+              />
+            </li>
+            <li class="shrink-0">
+              <img
+                class="h-5 lg:h-6"
+                src="/logo-bi.png"
+                alt="Business Insider logo"
+              />
+            </li>
+            <li class="shrink-0">
+              <img
+                class="h-5 lg:h-6"
+                src="/logo-forbes.png"
+                alt="Forbes logo"
+              />
+            </li>
+            <li class="shrink-0">
+              <img
+                class="h-5 lg:h-6"
+                src="/logo-tc.png"
+                alt="TechCrunch logo"
+              />
+            </li>
+            <li class="shrink-0">
+              <img
+                class="h-5 lg:h-6"
+                src="/logo-nyt.png"
+                alt="The New York Times logo"
+              />
+            </li>
+          </ul>
+
+          <!-- Mobile: Includes auto slider. -->
+          <div class="swiper my-swiper w-full opacity-75 md:hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide w-max">
+                <img class="h-5" src="/logo-usat.png" alt="USA Today logo" />
+              </div>
+              <div class="swiper-slide w-max">
+                <img
+                  class="h-5"
+                  src="/logo-bi.png"
+                  alt="Business Insider logo"
+                />
+              </div>
+              <div class="swiper-slide w-max">
+                <img class="h-5" src="/logo-forbes.png" alt="Forbes logo" />
+              </div>
+              <div class="swiper-slide w-max">
+                <img class="h-5" src="/logo-tc.png" alt="TechCrunch logo" />
+              </div>
+              <div class="swiper-slide w-max">
+                <img class="h-5" src="/logo-nyt.png" alt="NYT logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: Features -->
+        <div class="section pt-6 sm:pt-3" id="features">
+          <!-- Section title -->
+          <div class="mb-10 font-display md:mb-16">
+            <h2
+              class="mb-2 text-sm font-bold uppercase tracking-widest text-brand-600 md:text-base"
+            >
+              Features
+            </h2>
+            <p class="text-xl font-extrabold leading-tight md:text-3xl">
+              All of your concerns are taken care of by one product and an
+              excellent team.
+            </p>
+          </div>
+
+          <div
+            class="grid items-start justify-items-start gap-x-12 gap-y-10 sm:grid-cols-2 md:gap-y-14"
+          >
+            <div class="space-y-3 md:space-y-4">
+              <div
+                class="grid h-12 w-12 place-items-center bg-brand-600 md:h-14 md:w-14"
+              >
+                <svg class="h-6 w-6 md:h-7 md:w-7">
+                  <use xlink:href="/icons.svg#icon-config"></use>
+                </svg>
+              </div>
+              <h3 class="font-bold">Configurable, start to finish</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore.
+              </p>
+            </div>
+            <div class="space-y-3">
+              <div
+                class="grid h-12 w-12 place-items-center bg-brand-600 md:h-14 md:w-14"
+              >
+                <svg class="h-6 w-6 md:h-7 md:w-7">
+                  <use xlink:href="/icons.svg#icon-card"></use>
+                </svg>
+              </div>
+              <h3 class="font-bold">Multiple payment methods</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore.
+              </p>
+            </div>
+            <div class="space-y-3">
+              <div
+                class="grid h-12 w-12 place-items-center bg-brand-600 md:h-14 md:w-14"
+              >
+                <svg class="h-6 w-6 md:h-7 md:w-7">
+                  <use xlink:href="/icons.svg#icon-safe"></use>
+                </svg>
+              </div>
+              <h3 class="font-bold">Secure by default</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore.
+              </p>
+            </div>
+            <div class="space-y-3">
+              <div
+                class="grid h-12 w-12 place-items-center bg-brand-600 md:h-14 md:w-14"
+              >
+                <svg class="h-6 w-6 md:h-7 md:w-7">
+                  <use xlink:href="/icons.svg#icon-tube"></use>
+                </svg>
+              </div>
+              <h3 class="font-bold">Always live on the edge</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: How it works -->
+        <div class="bg-gray-50 py-2 sm:py-6 md:py-8" id="how-it-works">
+          <div class="section">
+            <!-- Section title -->
+            <div class="mb-10 font-display md:mb-16">
+              <h2
+                class="mb-2 text-sm font-bold uppercase tracking-widest text-brand-600 md:text-base"
+              >
+                How It Works
+              </h2>
+              <p class="text-xl font-extrabold leading-tight md:text-3xl">
+                Working with this has never been easier.
+              </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row sm:gap-8 md:gap-6 lg:gap-14">
+              <!-- Steps (these are clicked to show different tabs) -->
+              <ul class="mb-8 flex justify-around sm:flex-col md:order-1">
+                <li
+                  class="w-full cursor-pointer py-1 text-center sm:border-b sm:px-4 sm:py-2 md:flex md:py-4"
+                  data-step="1"
+                >
+                  1
+                  <span
+                    class="hidden whitespace-nowrap md:ml-4 md:inline-block"
+                  >
+                    Create an account
+                  </span>
+                </li>
+                <li
+                  class="w-full cursor-pointer border-l py-1 text-center sm:border-l-0 sm:border-b sm:px-4 sm:py-2 md:flex md:py-4"
+                  data-step="2"
+                >
+                  2
+                  <span
+                    class="hidden whitespace-nowrap md:ml-4 md:inline-block"
+                  >
+                    Configure your settings
+                  </span>
+                </li>
+                <li
+                  class="w-full cursor-pointer border-l py-1 text-center sm:border-l-0 sm:border-b sm:px-4 sm:py-2 md:flex md:py-4"
+                  data-step="3"
+                >
+                  3
+                  <span
+                    class="hidden whitespace-nowrap md:ml-4 md:inline-block"
+                  >
+                    Activate your free credit
+                  </span>
+                </li>
+                <li
+                  class="w-full cursor-pointer border-l py-1 text-center sm:border-l-0 sm:px-4 sm:py-2 md:flex md:py-4"
+                  data-step="4"
+                >
+                  4
+                  <span
+                    class="hidden whitespace-nowrap md:ml-4 md:inline-block"
+                  >
+                    Start working
+                  </span>
+                </li>
+              </ul>
+
+              <!-- Tab #1 -->
+              <div
+                class="space-y-4 md:max-w-md lg:max-w-lg lg:space-y-6"
+                data-tab="1"
+              >
+                <h3 class="font-bold">Create an account</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+                <p>
+                  At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                  clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                  dolor sit.
+                </p>
+                <button class="btn-primary">Sign up</button>
+              </div>
+
+              <!-- Tab #2 -->
+              <div
+                class="space-y-4 md:max-w-md lg:max-w-lg lg:space-y-6"
+                data-tab="2"
+              >
+                <h3 class="font-bold">Configure your settings</h3>
+                <p>
+                  At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                  clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                  dolor sit.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+                <button class="btn-primary">Go to settings</button>
+              </div>
+
+              <!-- Tab #3 -->
+              <div
+                class="space-y-4 md:max-w-md lg:max-w-lg lg:space-y-6"
+                data-tab="3"
+              >
+                <h3 class="font-bold">Activate your free credit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+                <p>
+                  At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                  clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                  dolor sit.
+                </p>
+                <button class="btn-primary">Activate</button>
+              </div>
+
+              <!-- Tab #4 -->
+              <div
+                class="space-y-4 md:max-w-md lg:max-w-lg lg:space-y-6"
+                data-tab="4"
+              >
+                <h3 class="font-bold">Start working right away!</h3>
+                <p>
+                  At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                  clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                  dolor sit.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+                <button class="btn-primary">Get started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: Testimonials -->
+        <div class="bg-purple-200 py-20" id="testimonials">
+          <div class="section my-0">
+            <!-- Section title -->
+            <div class="mb-6 font-display md:mb-10">
+              <h2
+                class="mb-2 text-sm font-bold uppercase tracking-widest text-brand-600 md:text-base"
+              >
+                Testimonials
+              </h2>
+              <p class="text-xl font-extrabold leading-tight md:text-3xl">
+                People love us. Don't take our word for it.
+              </p>
+            </div>
+
+            <p class="hidden text-gray-600 md:mb-12 md:block">
+              At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita kasd gubergren, no sea takimata sanctus est lorem ipsum
+              dolor sit eos et accusam et justo duo dolores et.
+            </p>
+
+            <!-- Testimonial cards -->
+            <div class="grid gap-8 sm:grid-cols-2">
+              <!-- Testimonial card -->
+              <div
+                class="bg-white bg-[url('/bg-quo.svg')] bg-[length:80px] bg-right-top bg-no-repeat p-8 sm:bg-left-top"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores.
+                </p>
+                <div class="mt-6 flex items-stretch gap-4">
+                  <img src="/a1.jpg" alt="Caleb Murphy" class="h-20 w-20" />
+                  <div class="flex flex-col">
+                    <p class="font-bold text-brand-600">Caleb Murphy</p>
+                    <p class="mt-auto text-sm font-semibold">
+                      Product Designer
+                    </p>
+                    <p class="text-sm text-gray-500">KQ Studios</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial card -->
+              <div
+                class="bg-white bg-[url('/bg-quo.svg')] bg-[length:80px] bg-right-top bg-no-repeat p-8 sm:bg-left-top"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores.
+                </p>
+                <div class="mt-6 flex items-stretch gap-4">
+                  <img src="/a2.jpg" alt="Caleb Murphy" class="h-20 w-20" />
+                  <div class="flex flex-col">
+                    <p class="font-bold text-brand-600">Katherine Smith</p>
+                    <p class="mt-auto text-sm font-semibold">
+                      Software Engineer
+                    </p>
+                    <p class="text-sm text-gray-500">Twitter</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Wide testimonial card -->
+              <div
+                class="bg-white bg-[url('/bg-quo.svg')] bg-[length:80px] bg-right-top bg-no-repeat p-8 sm:col-span-2 sm:flex sm:items-start sm:justify-start sm:gap-4 sm:bg-left-top sm:py-10"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores.
+                </p>
+                <div
+                  class="mt-6 flex items-stretch gap-4 sm:mt-0 sm:flex-shrink-0"
+                >
+                  <img src="/a4.jpg" alt="Sam Yeet" class="h-20 w-20" />
+                  <div class="flex flex-col sm:w-max">
+                    <p class="font-bold text-purple-600 sm:w-max">Sam Yeet</p>
+                    <p class="mt-auto text-sm font-semibold sm:w-max">
+                      Dev Lead
+                    </p>
+                    <p class="text-sm text-gray-500 sm:w-max">Slinger Games</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: Pricing -->
+        <div class="bg-gray-50 py-20" id="pricing">
+          <div class="section my-0 max-w-7xl">
+            <!-- Section title -->
+            <div class="mb-10 text-center font-display md:mb-10">
+              <h2
+                class="mb-2 text-sm font-bold uppercase tracking-widest text-brand-600 md:text-base"
+              >
+                Pricing
+              </h2>
+              <p class="text-xl font-extrabold leading-tight md:text-3xl">
+                We have a solution for every use case.
+              </p>
+            </div>
+
+            <!-- Pricing cards -->
+            <div
+              class="flex flex-col flex-wrap justify-center gap-8 md:basis-80 md:flex-row"
+            >
+              <!-- Starter plan -->
+              <div
+                class="mx-auto flex w-full max-w-sm flex-col items-center gap-6 border-[3px] border-brand-600 py-7 px-4 lg:m-0 lg:justify-self-end"
+              >
+                <div>
+                  <h3
+                    class="text-center text-sm font-bold uppercase tracking-widest text-brand-600"
+                  >
+                    Starter
+                  </h3>
+                  <p
+                    class="mt-2 text-center font-display text-4xl font-extrabold uppercase"
+                  >
+                    Free
+                  </p>
+                </div>
+
+                <ul class="space-y-4">
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-600">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span>At vero 200 et accusam et.</span>
+                  </li>
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-600">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span>5 duo dolores.</span>
+                  </li>
+                  <li class="text-gray-500">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-gray-300">
+                      <use xlink:href="/icons.svg#icon-times"></use>
+                    </svg>
+                    <span>Et ea rebum. Stet clita.</span>
+                  </li>
+                  <li class="text-gray-500">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-gray-300">
+                      <use xlink:href="/icons.svg#icon-times"></use>
+                    </svg>
+                    <span>Kasd gubergren.</span>
+                  </li>
+                  <li class="text-gray-500">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-gray-300">
+                      <use xlink:href="/icons.svg#icon-times"></use>
+                    </svg>
+                    <span>No sea takimata sanctus.</span>
+                  </li>
+                  <li class="text-gray-500">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-gray-300">
+                      <use xlink:href="/icons.svg#icon-times"></use>
+                    </svg>
+                    <span>Lorem ipsum dolor sit.</span>
+                  </li>
+                </ul>
+                <button class="btn-primary">Get started</button>
+              </div>
+
+              <!-- Personal plan -->
+              <div
+                class="relative mx-auto flex w-full max-w-sm flex-col items-center gap-6 overflow-hidden bg-brand-600 py-10 px-4 md:py-8 lg:m-0 lg:justify-self-end"
+              >
+                <div
+                  class="absolute top-[25px] -right-[52px] rotate-45 bg-yellow-200 px-12 py-2 text-center text-sm font-bold uppercase tracking-wider"
+                >
+                  Best Value
+                </div>
+                <div>
+                  <h3
+                    class="text-center text-sm font-bold uppercase tracking-widest text-brand-200"
+                  >
+                    Personal
+                  </h3>
+                  <p
+                    class="mt-2 text-center font-display text-5xl font-extrabold uppercase text-brand-50"
+                  >
+                    <span class="text-3xl">$</span><span>12</span
+                    ><span
+                      class="ml-1 text-xl font-normal lowercase text-brand-200"
+                      >/mo</span
+                    >
+                  </p>
+                </div>
+
+                <ul class="space-y-4">
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-50">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span class="text-brand-50"
+                      >At vero 800 et accusam et.</span
+                    >
+                  </li>
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-50">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span class="text-brand-50">+50 duo dolores.</span>
+                  </li>
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-50">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span class="text-brand-50">Et ea rebum. Stet clita.</span>
+                  </li>
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-50">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span class="text-brand-50">Kasd gubergren.</span>
+                  </li>
+                  <li class="text-brand-300">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-400">
+                      <use xlink:href="/icons.svg#icon-times"></use>
+                    </svg>
+                    <span>No sea takimata sanctus.</span>
+                  </li>
+                  <li class="text-brand-300">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-400">
+                      <use xlink:href="/icons.svg#icon-times"></use>
+                    </svg>
+                    <span>Lorem ipsum dolor sit.</span>
+                  </li>
+                </ul>
+                <button class="btn-secondary">Get started</button>
+              </div>
+
+              <!-- Team plan -->
+              <div
+                class="mx-auto flex w-full max-w-sm flex-col items-center gap-6 border-[3px] border-brand-600 py-7 px-4 lg:m-0 lg:justify-self-end"
+              >
+                <div>
+                  <h3
+                    class="text-center text-sm font-bold uppercase tracking-widest text-brand-600"
+                  >
+                    Team
+                  </h3>
+                  <p
+                    class="mt-2 text-center font-display text-5xl font-extrabold uppercase"
+                  >
+                    <span class="text-3xl">$</span><span>32</span
+                    ><span
+                      class="ml-1 text-xl font-medium lowercase text-gray-500"
+                      >/mo</span
+                    >
+                  </p>
+                </div>
+
+                <ul class="space-y-4">
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-600">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span>At vero 800 et accusam et.</span>
+                  </li>
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-600">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span>+50 duo dolores.</span>
+                  </li>
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-600">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span>Et ea rebum. Stet clita.</span>
+                  </li>
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-600">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span>Kasd gubergren.</span>
+                  </li>
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-600">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span>No sea takimata sanctus.</span>
+                  </li>
+                  <li class="text-black">
+                    <svg class="mr-3 inline-block h-5 w-5 fill-brand-600">
+                      <use xlink:href="/icons.svg#icon-check"></use>
+                    </svg>
+                    <span>Lorem ipsum dolor sit.</span>
+                  </li>
+                </ul>
+                <button class="btn-primary">Get started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: Contact us -->
+        <div class="bg-white py-20" id="contact-us">
+          <div class="section my-0">
+            <!-- Section title -->
+            <div class="mb-10 font-display md:mb-16">
+              <h2
+                class="mb-2 text-sm font-bold uppercase tracking-widest text-brand-600 md:text-base"
+              >
+                Contact us
+              </h2>
+              <p class="text-xl font-extrabold leading-tight md:text-3xl">
+                Not seeing a plan for you? Let's find it together.
+              </p>
+            </div>
+
+            <div
+              class="mx-auto grid w-full max-w-sm bg-brand-600 md:m-0 md:max-w-full md:grid-cols-2"
+            >
+              <form class="px-6 py-8">
+                <h3
+                  class="mb-5 font-display text-lg font-bold text-white md:mb-7 md:text-2xl"
+                >
+                  Send us a message
+                </h3>
+                <div class="space-y-4 md:space-y-6">
+                  <input
+                    class="block w-full px-3 py-2 focus:outline-none focus:ring-4 focus:ring-brand-400 md:px-4 md:py-3"
+                    placeholder="John Doe"
+                    type="text"
+                    name="name"
+                    aria-label="Your name"
+                  />
+                  <input
+                    class="block w-full px-3 py-2 focus:outline-none focus:ring-4 focus:ring-brand-400 md:px-4 md:py-3"
+                    placeholder="jdoe@email.com"
+                    type="email"
+                    name="email"
+                    aria-label="Your email"
+                  />
+                  <textarea
+                    name="message"
+                    placeholder="I have a question about..."
+                    class="block w-full resize-none px-3 py-2 focus:outline-none focus:ring-4 focus:ring-brand-400 md:px-4 md:py-3"
+                    rows="4"
+                    aria-label="Your message"
+                  ></textarea>
+                </div>
+                <button class="btn-secondary mt-5 block md:mt-7 md:px-12">
+                  Send
+                </button>
+              </form>
+
+              <!-- This is an empty element that contains decorative background -->
+              <div
+                class="hidden bg-cover bg-[28px_center] bg-no-repeat md:block md:bg-[url('/envelope.svg')]"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-brand-600 px-6 py-12 text-brand-200">
+      <div class="mx-auto grid max-w-lg sm:max-w-6xl md:grid-cols-4 md:gap-6">
+        <div class="mb-6 md:col-span-2">
+          <a
+            class="mb-3 inline-block font-display font-bold text-brand-50"
+            href="#body"
+            >Xeno</a
+          >
+          <p class="mb-3">
+            &copy; 2049 City Country, Inc. All rights reserved.
+          </p>
+
+          <address class="not-italic">
+            <p>Imaginary Street, No: 4/2</p>
+            <p>City, Country</p>
+            <p>+12 (345) 678 900</p>
+            <p>info@xeno.com</p>
+          </address>
+        </div>
+
+        <div class="mb-3 space-y-3 font-semibold">
+          <a href="#body" class="block">Home</a>
+          <a href="#features" class="block">Features</a>
+          <a href="#how-it-works" class="block">How it works</a>
+        </div>
+
+        <div class="space-y-3 font-semibold">
+          <a href="#testimonials" class="block">Testimonials</a>
+          <a href="#pricing" class="block">Pricing</a>
+          <a href="#contact-us" class="block">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/lib/main.js"></script>
+  </body>
+</html>

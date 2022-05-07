@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply inline-block whitespace-nowrap bg-brand-600 px-5 py-2 font-semibold text-gray-100 transition hover:bg-brand-700;
+  }
+
+  .btn-secondary {
+    @apply inline-block whitespace-nowrap border-2 border-solid border-brand-600 bg-white px-5 py-2 font-semibold text-brand-600 transition hover:border-white hover:bg-brand-600 hover:text-white;
+  }
+
+  .nav-link {
+    @apply border-b-4 border-transparent pb-2 transition hover:border-brand-600 hover:text-brand-600;
+  }
+
+  .section {
+    @apply mx-auto my-20 w-full max-w-lg px-6 sm:max-w-4xl;
+  }
+}
+
+/* Swiper CSS */
+
+.swiper-slide {
+  width: max-content !important;
+}
