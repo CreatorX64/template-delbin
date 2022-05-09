@@ -103,14 +103,9 @@ It's in the format of:
 
 ## Attributions
 
-- **Job Finder Ui App Kit by UI Freebies**: Used inside the device mockup in Hero section. Note that you'll need to replace this image with your own app screenshot. You can do the replacement in the provided Figma file. Resource:
-  https://www.figma.com/community/file/1095632577663801003/Job-Finder-Ui-App-Kit
+- **iPhone 13 Device Mockup by MockUPhone**: Used as a device mockup inside the Hero section. Resource: https://mockuphone.com
 
-- **Testimonials photos**: You can swap these with photos of your customers or their brand logos if you wish:
-  - Photo by Emmy E: https://www.pexels.com/photo/woman-wearing-gray-notch-lapel-suit-jacket-2381069
-  - Photo by Andrea Piacquadio: https://www.pexels.com/photo/man-sitting-on-chair-beside-table-834863
-  - Photo by Mikhail Nilov: https://www.pexels.com/photo/smiling-woman-wearing-a-plaid-blazer-in-office-8101982
-  - Photo by Karolina Grabowska: https://www.pexels.com/photo/cheerful-woman-working-on-laptop-and-smiling-4467683
+- **Job Finder Ui App Kit by UI Freebies**: Used inside the device mockup in Hero section. Note that you'll need to replace this image with your own app screenshot. You can do the replacement in the provided Figma file. Resource: https://www.figma.com/community/file/1095632577663801003/Job-Finder-Ui-App-Kit
 
 ## Support
 
