@@ -7,9 +7,6 @@ module.exports = {
         body: ["Open Sans", "sans-serif"]
       },
       colors: {
-        // These are basically copies of Tailwind CSS's purple color palette. I
-        // abstracted this color into a new name called "brand" so that you can
-        // plug in your own brand color without having make changes in the code.
         brand: {
           50: "#faf5ff",
           100: "#f3e8ff",

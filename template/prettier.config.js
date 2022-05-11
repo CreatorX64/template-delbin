@@ -1,8 +1,0 @@
-module.exports = {
-  arrowParens: "always",
-  singleQuote: false,
-  tabWidth: 2,
-  semi: true,
-  trailingComma: "none",
-  tailwindConfig: "./tailwind.config.js"
-};
