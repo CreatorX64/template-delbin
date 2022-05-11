@@ -1,4 +1,4 @@
-# Xeno — Tailwind CSS website template for a product/startup
+# Delbin — Tailwind CSS website template for a product/startup
 
 ![Screenshot of the website template](/assets/screen.jpg)
 
