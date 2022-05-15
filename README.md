@@ -71,6 +71,7 @@ Note that if you're using VS Code, you can collapse all the parent HTML tags of 
 
 Here are all the section names you can use with above information:
 
+- Loading screen
 - Navigation
 - Hero
 - Featured in
@@ -80,6 +81,8 @@ Here are all the section names you can use with above information:
 - Pricing
 - Contact us
 - Footer
+
+In the **index.html** file, other important notes are tagged with "_@NOTE_" comment. I recommend reading these comments before you make updates to the file as they can save you a lot of time. I wrote them in the **index.html** file because they are concerned with specific class names or conventions in a specific location in the file. Again, to see the imporant notes, you can search for "_@NOTE_" in your text editor.
 
 ## Useful Notes: script.js
 

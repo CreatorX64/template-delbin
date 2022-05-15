@@ -2,7 +2,24 @@ import Swiper, { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 
-//#region @Navigation - Smooth Scrolling & Mobile Nav Logic
+//#region @Loading screen - Show & hide loading animation
+
+// Show & Hide loading screen. The loading screen is basically an absolutely
+// positioned <div> element which inludes an SVG loading animation
+
+const elemLoadingScreen = document.querySelector(".loading-screen");
+// Once our webpage loads, hide the loading screen
+window.addEventListener("load", () => {
+  // Remove the loading screen
+  elemLoadingScreen.remove();
+  // Enable scrolling once page is loaded
+  document.body.classList.toggle("overflow-y-hidden");
+  document.documentElement.classList.toggle("overflow-y-hidden");
+});
+
+//#endregion
+
+//#region @Navigation - Smooth scrolling & mobile nav logic
 
 const links = document.querySelectorAll("a");
 
@@ -19,19 +36,26 @@ links.forEach((link) => {
   }
 });
 
-// Hamburger menu
+// Mobile nav logic
 
 const toggleMobileNavState = () => {
   const mobileNav = document.querySelector(".mobile-nav");
   const hamburger = document.querySelector(".hamburger");
 
-  mobileNav.classList.toggle("left-0");
-  mobileNav.classList.toggle("left-full");
+  // This is only required when mobile nav is opened the first time, that's why
+  // we don't toggle it but just remove it
+  mobileNav.classList.remove("invisible");
+
+  mobileNav.classList.toggle("translate-x-full");
+  mobileNav.classList.toggle("translate-x-0");
+  mobileNav.classList.toggle("pointer-events-none");
+  mobileNav.classList.toggle("pointer-events-auto");
 
   hamburger.classList.toggle("stroke-current");
   hamburger.classList.toggle("stroke-brand-50");
 
   document.body.classList.toggle("overflow-y-hidden");
+  document.documentElement.classList.toggle("overflow-y-hidden");
 };
 
 document.querySelector(".hamburger")?.addEventListener("click", () => {
@@ -50,7 +74,7 @@ links.forEach((link) => {
 
 //#endregion
 
-//#region @Featured in - Swiper Logic
+//#region @Featured in - Swiper logic
 
 // Swiper autoplay configuration.
 
@@ -66,7 +90,7 @@ new Swiper(".my-swiper", {
 
 //#endregion
 
-//#region @How it works - Tabbed Component Logic
+//#region @How it works - Tabbed component logic
 
 let activeStep = "1";
 const stepElems = document.querySelectorAll("li[data-step]");
