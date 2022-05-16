@@ -76,159 +76,164 @@
     <!-- DECORATION: Stripe/line at top -->
     <div class="from-brand-600 h-2 bg-gradient-to-r to-red-500"></div>
 
-    <!-- SECTION: @Navigation -->
-    <div class="relative bg-gray-50">
-      <div
-        class="flex justify-between px-9 py-7 align-baseline md:mx-auto md:max-w-7xl"
-      >
-        <div>
-          <a href="/" class="font-display text-2xl font-extrabold">Delbin</a>
-        </div>
-
-        <!-- Mobile navigation -->
-        <nav
-          class="mobile-nav bg-brand-600 pointer-events-none invisible absolute top-[-8px] left-0 z-50 h-screen w-full translate-x-full transform transition-all duration-700"
+    <header
+      class="bg-gray-50 bg-[url('/images/bg-hero-pattern.jpg')] bg-cover bg-center bg-no-repeat"
+    >
+      <!-- SECTION: @Navigation -->
+      <div class="relative">
+        <div
+          class="flex justify-between px-9 py-7 align-baseline md:mx-auto md:max-w-7xl"
         >
-          <ul
-            class="font-display text-brand-50 flex h-full w-full flex-col items-start justify-center gap-8 px-10 text-2xl font-bold"
-          >
-            <li>
-              <a href="#features" class="nav-link hover:text-brand-300"
-                >Features</a
-              >
-            </li>
-            <li>
-              <a href="#how-it-works" class="nav-link hover:text-brand-300"
-                >How it works</a
-              >
-            </li>
-            <li>
-              <a href="#testimonials" class="nav-link hover:text-brand-300"
-                >Testimonials</a
-              >
-            </li>
-            <li>
-              <a href="#pricing" class="nav-link hover:text-brand-300"
-                >Pricing</a
-              >
-            </li>
-            <li>
-              <a href="#contact-us" class="nav-link hover:text-brand-300"
-                >Contact us</a
-              >
-            </li>
-          </ul>
-        </nav>
+          <div>
+            <a href="/" class="font-display text-2xl font-extrabold">Delbin</a>
+          </div>
 
-        <!-- Tablet & Desktop navigation -->
-        <nav class="hidden md:block">
-          <ul
-            class="flex items-center justify-between gap-7 font-semibold lg:gap-9"
+          <!-- Mobile navigation -->
+          <nav
+            class="mobile-nav bg-brand-600 pointer-events-none invisible absolute top-[-8px] left-0 z-50 h-screen w-full translate-x-full transform transition-all duration-700"
           >
-            <li>
-              <a href="#features" class="nav-link">Features</a>
-            </li>
-            <li>
-              <a href="#how-it-works" class="nav-link">How it works</a>
-            </li>
-            <li>
-              <a href="#testimonials" class="nav-link">Testimonials</a>
-            </li>
-            <li>
-              <a href="#pricing" class="nav-link">Pricing</a>
-            </li>
-            <li>
-              <a href="#!" class="btn-primary">Get started</a>
-            </li>
-          </ul>
-        </nav>
+            <ul
+              class="font-display text-brand-50 flex h-full w-full flex-col items-start justify-center gap-8 px-10 text-2xl font-bold"
+            >
+              <li>
+                <a href="#features" class="nav-link hover:text-brand-300"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a href="#how-it-works" class="nav-link hover:text-brand-300"
+                  >How it works</a
+                >
+              </li>
+              <li>
+                <a href="#testimonials" class="nav-link hover:text-brand-300"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" class="nav-link hover:text-brand-300"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#contact-us" class="nav-link hover:text-brand-300"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </nav>
 
-        <div class="z-50 cursor-pointer md:hidden">
-          <svg class="hamburger h-7 w-7 stroke-current transition">
-            <use xlink:href="/icons/icons.svg#icon-hamburger"></use>
-          </svg>
+          <!-- Tablet & Desktop navigation -->
+          <nav class="hidden md:block">
+            <ul
+              class="flex items-center justify-between gap-7 font-semibold lg:gap-9"
+            >
+              <li>
+                <a href="#features" class="nav-link">Features</a>
+              </li>
+              <li>
+                <a href="#how-it-works" class="nav-link">How it works</a>
+              </li>
+              <li>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+              </li>
+              <li>
+                <a href="#pricing" class="nav-link">Pricing</a>
+              </li>
+              <li>
+                <a href="#!" class="btn-primary">Get started</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="z-50 cursor-pointer md:hidden">
+            <svg class="hamburger h-7 w-7 stroke-current transition">
+              <use xlink:href="/icons/icons.svg#icon-hamburger"></use>
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
+
+      <!-- SECTION: @Hero -->
+      <div
+        class="p-9 pb-12 md:flex md:items-center md:justify-center md:gap-8 lg:gap-12 lg:pt-12 lg:pb-14"
+      >
+        <picture class="mx-auto block w-4/5 max-w-sm md:order-1 md:m-0">
+          <source type="image/webp" srcset="/images/hero.webp" />
+          <source type="image/png" srcset="/images/hero.png" />
+          <img
+            src="/images/hero.png"
+            alt="Mobile phone in front of a triangle-shape background"
+          />
+        </picture>
+
+        <div class="text-center md:text-left">
+          <h1
+            class="font-display mt-3 mb-6 text-2xl font-extrabold md:mt-0 md:text-4xl"
+          >
+            One product.
+            <br />
+            <span
+              class="from-brand-500 bg-gradient-to-r to-red-500 bg-clip-text text-transparent"
+              >Endless possibilities.</span
+            >
+          </h1>
+
+          <p class="mx-auto mb-7 max-w-md leading-relaxed lg:mx-0">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
+            obcaecati provid ab impedit facilis.
+          </p>
+
+          <div
+            class="mb-10 flex justify-center space-x-3 md:justify-start lg:mb-14 lg:space-x-4"
+          >
+            <a class="btn-primary" href="#!">Get started</a>
+            <a class="btn-secondary" href="#features"
+              >Find out more&nbsp;&nbsp;↓</a
+            >
+          </div>
+
+          <div
+            class="hidden gap-3 md:flex md:flex-col md:items-start lg:flex-row lg:items-center"
+          >
+            <div class="-space-x-5">
+              <img
+                src="/images/a1.jpg"
+                alt="User avatar"
+                class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
+              />
+              <img
+                src="/images/a2.jpg"
+                alt="User avatar"
+                class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
+              />
+              <img
+                src="/images/a4.jpg"
+                alt="User avatar"
+                class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
+              />
+              <img
+                src="/images/a5.jpg"
+                alt="User avatar"
+                class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
+              />
+              <img
+                src="/images/a6.jpg"
+                alt="User avatar"
+                class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
+              />
+            </div>
+            <p class="text-sm text-gray-500 lg:text-base">
+              <strong class="text-brand-600">+12k</strong> people use Delbin,
+              <strong class="text-brand-600">everyday.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main class="text-base leading-relaxed lg:text-lg">
       <div>
-        <!-- SECTION: @Hero -->
-        <div
-          class="bg-gray-50 p-9 pb-12 md:flex md:items-center md:justify-center md:gap-8 lg:gap-12 lg:pt-12 lg:pb-14"
-        >
-          <picture
-            class="mx-auto block w-4/5 max-w-sm translate-x-7 md:order-1 md:m-0"
-          >
-            <source type="image/webp" srcset="/images/hero.webp" />
-            <source type="image/png" srcset="/images/hero.png" />
-            <img
-              src="/images/hero.png"
-              alt="Mobile phone in front of a triangle-shape background"
-            />
-          </picture>
-
-          <div class="text-center md:text-left">
-            <h1
-              class="font-display mt-3 mb-6 text-2xl font-extrabold md:mt-0 md:mb-8 md:text-4xl"
-            >
-              One product.
-              <br />
-              Endless possibilities.
-            </h1>
-
-            <p class="mx-auto mb-6 max-w-md lg:mx-0">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Accusamus obcaecati provid ab impedit facilis.
-            </p>
-
-            <div
-              class="mb-10 flex justify-center space-x-3 md:justify-start lg:mb-14 lg:space-x-4"
-            >
-              <a class="btn-primary" href="#!">Get started</a>
-              <a class="btn-secondary" href="#features"
-                >Find out more&nbsp;&nbsp;↓</a
-              >
-            </div>
-
-            <div
-              class="hidden gap-3 md:flex md:flex-col md:items-start lg:flex-row lg:items-center"
-            >
-              <div class="-space-x-5">
-                <img
-                  src="/images/a1.jpg"
-                  alt="User avatar"
-                  class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
-                />
-                <img
-                  src="/images/a2.jpg"
-                  alt="User avatar"
-                  class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
-                />
-                <img
-                  src="/images/a4.jpg"
-                  alt="User avatar"
-                  class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
-                />
-                <img
-                  src="/images/a5.jpg"
-                  alt="User avatar"
-                  class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
-                />
-                <img
-                  src="/images/a6.jpg"
-                  alt="User avatar"
-                  class="inline-block h-14 w-14 rounded-full border-4 border-gray-50"
-                />
-              </div>
-              <p class="text-sm text-gray-500 lg:text-base">
-                <strong class="text-brand-600">+12k</strong> people use Delbin,
-                <strong class="text-brand-600">everyday.</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-
         <!-- SECTION: @Featured in -->
         <div class="bg-white px-9 pb-6">
           <h2
