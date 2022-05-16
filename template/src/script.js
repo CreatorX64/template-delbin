@@ -10,11 +10,14 @@ import "swiper/css/autoplay";
 const elemLoadingScreen = document.querySelector(".loading-screen");
 // Once our webpage loads, hide the loading screen
 window.addEventListener("load", () => {
-  // Remove the loading screen
-  elemLoadingScreen.remove();
-  // Enable scrolling once page is loaded
-  document.body.classList.toggle("overflow-y-hidden");
-  document.documentElement.classList.toggle("overflow-y-hidden");
+  // Give at least 500ms for loading spinner to show in order to prevent annoying flashing
+  setTimeout(() => {
+    // Remove the loading screen
+    elemLoadingScreen.remove();
+    // Enable scrolling once page is loaded
+    document.body.classList.toggle("overflow-y-hidden");
+    document.documentElement.classList.toggle("overflow-y-hidden");
+  }, 500);
 });
 
 //#endregion
