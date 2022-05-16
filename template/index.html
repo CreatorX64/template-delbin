@@ -680,7 +680,7 @@
             >
               <!-- Starter plan -->
               <div
-                class="border-brand-600 mx-auto flex w-full max-w-sm flex-col items-center gap-6 border-[3px] py-7 px-4 lg:m-0 lg:justify-self-end"
+                class="border-brand-600 mx-auto flex w-full max-w-sm flex-col items-center gap-6 border-[3px] py-7 px-4 lg:m-0 lg:gap-10 lg:justify-self-end"
               >
                 <div>
                   <h3
@@ -689,7 +689,7 @@
                     Starter
                   </h3>
                   <p
-                    class="font-display mt-2 text-center text-4xl font-extrabold uppercase"
+                    class="font-display mt-2 text-center text-4xl font-extrabold uppercase lg:mt-6"
                   >
                     Free
                   </p>
@@ -733,12 +733,15 @@
                     <span>Lorem ipsum dolor sit.</span>
                   </li>
                 </ul>
-                <button class="btn-primary">Get started</button>
+
+                <div class="w-full px-4">
+                  <button class="btn-primary w-full">Get started</button>
+                </div>
               </div>
 
               <!-- Personal plan -->
               <div
-                class="bg-brand-600 relative mx-auto flex w-full max-w-sm flex-col items-center gap-6 overflow-hidden py-10 px-4 md:py-8 lg:m-0 lg:justify-self-end"
+                class="bg-brand-600 relative mx-auto flex w-full max-w-sm flex-col items-center gap-6 overflow-hidden py-10 px-4 md:py-8 lg:m-0 lg:gap-10 lg:justify-self-end"
               >
                 <div
                   class="absolute top-[25px] -right-[52px] rotate-45 bg-yellow-200 px-12 py-2 text-center text-sm font-bold uppercase tracking-wider"
@@ -752,7 +755,7 @@
                     Personal
                   </h3>
                   <p
-                    class="font-display text-brand-50 mt-2 text-center text-5xl font-extrabold uppercase"
+                    class="font-display text-brand-50 mt-2 text-center text-5xl font-extrabold uppercase lg:mt-6"
                   >
                     <span class="text-3xl">$</span><span>12</span
                     ><span
@@ -802,12 +805,15 @@
                     <span>Lorem ipsum dolor sit.</span>
                   </li>
                 </ul>
-                <button class="btn-secondary">Get started</button>
+
+                <div class="w-full px-4">
+                  <button class="btn-secondary w-full">Get started</button>
+                </div>
               </div>
 
               <!-- Team plan -->
               <div
-                class="border-brand-600 mx-auto flex w-full max-w-sm flex-col items-center gap-6 border-[3px] py-7 px-4 lg:m-0 lg:justify-self-end"
+                class="border-brand-600 mx-auto flex w-full max-w-sm flex-col items-center gap-6 border-[3px] py-7 px-4 lg:m-0 lg:gap-10 lg:justify-self-end"
               >
                 <div>
                   <h3
@@ -816,7 +822,7 @@
                     Team
                   </h3>
                   <p
-                    class="font-display mt-2 text-center text-5xl font-extrabold uppercase"
+                    class="font-display mt-2 text-center text-5xl font-extrabold uppercase lg:mt-6"
                   >
                     <span class="text-3xl">$</span><span>32</span
                     ><span
@@ -864,7 +870,10 @@
                     <span>Lorem ipsum dolor sit.</span>
                   </li>
                 </ul>
-                <button class="btn-primary">Get started</button>
+
+                <div class="w-full px-4">
+                  <button class="btn-primary w-full">Get started</button>
+                </div>
               </div>
             </div>
           </div>
@@ -934,17 +943,15 @@
     </main>
 
     <!-- SECTION: @Footer -->
-    <footer class="bg-brand-600 text-brand-200 w-full px-6 py-12">
+    <footer class="bg-brand-600 text-brand-200 w-full px-6 py-12 lg:py-24">
       <div class="mx-auto grid max-w-lg sm:max-w-6xl md:grid-cols-4 md:gap-6">
         <div class="mb-6 md:col-span-2">
           <a
-            class="font-display text-brand-50 mb-3 inline-block font-bold"
+            class="font-display text-brand-50 mb-3 inline-block font-bold lg:mb-4"
             href="#body"
             >Delbin</a
           >
-          <p class="mb-3">
-            &copy; 2049 City Country, Inc. All rights reserved.
-          </p>
+          <p class="mb-3 lg:mb-4">Delbin &copy; 2049 • All rights reserved</p>
 
           <address class="not-italic">
             <p>Imaginary Street, No: 4/2</p>
@@ -954,16 +961,18 @@
           </address>
         </div>
 
-        <div class="mb-3 space-y-3 font-semibold">
+        <div class="mb-3 space-y-3 font-semibold lg:space-y-4">
           <a href="#body" class="block">Home</a>
           <a href="#features" class="block">Features</a>
           <a href="#how-it-works" class="block">How it works</a>
+          <a href="#testimonials" class="block">Testimonials</a>
         </div>
 
-        <div class="space-y-3 font-semibold">
-          <a href="#testimonials" class="block">Testimonials</a>
+        <div class="space-y-3 font-semibold lg:space-y-4">
           <a href="#pricing" class="block">Pricing</a>
           <a href="#contact-us" class="block">Contact</a>
+          <a href="#!" class="block">Privacy Policy</a>
+          <a href="#!" class="block">Terms of Service</a>
         </div>
       </div>
     </footer>
