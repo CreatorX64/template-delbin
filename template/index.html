@@ -416,9 +416,10 @@
             <div class="flex flex-col sm:flex-row sm:gap-8 md:gap-6 lg:gap-14">
               <!-- Steps (these are clicked to show different tabs) -->
               <ul class="mb-8 flex justify-around sm:flex-col md:order-1">
+                <!-- @NOTE: Steps are 0-indexed in code so that calculations are more staright forward in script.js -->
                 <li
                   class="w-full cursor-pointer py-1 text-center sm:border-b sm:px-4 sm:py-2 md:flex md:py-4"
-                  data-step="1"
+                  data-step="0"
                 >
                   1
                   <span
@@ -429,7 +430,7 @@
                 </li>
                 <li
                   class="w-full cursor-pointer border-l py-1 text-center sm:border-l-0 sm:border-b sm:px-4 sm:py-2 md:flex md:py-4"
-                  data-step="2"
+                  data-step="1"
                 >
                   2
                   <span
@@ -440,7 +441,7 @@
                 </li>
                 <li
                   class="w-full cursor-pointer border-l py-1 text-center sm:border-l-0 sm:border-b sm:px-4 sm:py-2 md:flex md:py-4"
-                  data-step="3"
+                  data-step="2"
                 >
                   3
                   <span
@@ -451,7 +452,7 @@
                 </li>
                 <li
                   class="w-full cursor-pointer border-l py-1 text-center sm:border-l-0 sm:px-4 sm:py-2 md:flex md:py-4"
-                  data-step="4"
+                  data-step="3"
                 >
                   4
                   <span
@@ -462,10 +463,10 @@
                 </li>
               </ul>
 
-              <!-- Tab #1 -->
+              <!-- Tab #0 -->
               <div
                 class="space-y-4 md:max-w-md lg:max-w-lg lg:space-y-6"
-                data-tab="1"
+                data-tab="0"
               >
                 <h3 class="font-bold">Create an account</h3>
                 <p>
@@ -479,12 +480,17 @@
                   dolor sit.
                 </p>
                 <button class="btn-primary">Sign up</button>
+                <button
+                  class="btn-next text-brand-700 hover:text-brand-500 ml-8 font-semibold"
+                >
+                  Next →
+                </button>
               </div>
 
-              <!-- Tab #2 -->
+              <!-- Tab #1 -->
               <div
                 class="space-y-4 md:max-w-md lg:max-w-lg lg:space-y-6"
-                data-tab="2"
+                data-tab="1"
               >
                 <h3 class="font-bold">Configure your settings</h3>
                 <p>
@@ -498,12 +504,17 @@
                   aliquyam erat, sed diam voluptua.
                 </p>
                 <button class="btn-primary">Go to settings</button>
+                <button
+                  class="btn-next text-brand-700 hover:text-brand-500 ml-8 font-semibold"
+                >
+                  Next →
+                </button>
               </div>
 
-              <!-- Tab #3 -->
+              <!-- Tab #2 -->
               <div
                 class="space-y-4 md:max-w-md lg:max-w-lg lg:space-y-6"
-                data-tab="3"
+                data-tab="2"
               >
                 <h3 class="font-bold">Activate your free credit</h3>
                 <p>
@@ -517,12 +528,17 @@
                   dolor sit.
                 </p>
                 <button class="btn-primary">Activate</button>
+                <button
+                  class="btn-next text-brand-700 hover:text-brand-500 ml-8 font-semibold"
+                >
+                  Next →
+                </button>
               </div>
 
-              <!-- Tab #4 -->
+              <!-- Tab #3 -->
               <div
                 class="space-y-4 md:max-w-md lg:max-w-lg lg:space-y-6"
-                data-tab="4"
+                data-tab="3"
               >
                 <h3 class="font-bold">Start working right away!</h3>
                 <p>

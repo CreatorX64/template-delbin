@@ -95,9 +95,10 @@ new Swiper(".my-swiper", {
 
 //#region @How it works - Tabbed component logic
 
-let activeStep = "1";
+let activeStep = "0";
 const stepElems = document.querySelectorAll("li[data-step]");
 const tabElems = document.querySelectorAll("div[data-tab]");
+const btnNextElems = document.querySelectorAll(".btn-next");
 
 const updateSteps = () => {
   stepElems.forEach((stepElem) => {
@@ -109,6 +110,9 @@ const updateSteps = () => {
       stepElem.classList.add("font-bold");
       stepElem.classList.add("text-brand-600");
       stepElem.classList.remove("text-gray-400");
+      stepElem.classList.remove("hover:text-brand-400");
+    } else {
+      stepElem.classList.add("hover:text-brand-400");
     }
   });
 };
@@ -130,6 +134,14 @@ updateTabs();
 stepElems.forEach((stepElem) => {
   stepElem.addEventListener("click", (event) => {
     activeStep = event.currentTarget.dataset.step;
+    updateSteps();
+    updateTabs();
+  });
+});
+
+btnNextElems.forEach((btnNext) => {
+  btnNext.addEventListener("click", () => {
+    activeStep = ((Number(activeStep) + 1) % 4).toString();
     updateSteps();
     updateTabs();
   });
